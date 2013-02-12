@@ -62,9 +62,6 @@ sub rootone {
 		$name = $tns->att('NAME');
 	};
 
-#	$tns->att('DBID')->parent->print;
-#	exit;
-
 	# If there are spaces in the name, replace them with underscores
 	$name =~ s/ /_/g;
 	$desc = $tns->first_child('DESCRIPTION')->cut;
