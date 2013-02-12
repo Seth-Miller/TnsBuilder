@@ -94,7 +94,7 @@ sub rootone {
 	# The name of the tns entry is a combination of $name and $namesuffix
 	$title = "\n\n$name$namesuffix =\n";
 	$addr->paste( $final );
-	$conn->paste( last_child => $final->children ); 
+	$conn->paste( last_child => $final ); 
 	# Combine the $title and the $final twig
 	$sfinal = $title . $final->sprint;
 	
