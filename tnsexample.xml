@@ -1,0 +1,27 @@
+<TNSNAMES>
+  <TNS DBID="2668601826" NAME="ORCL_RAC">
+    <DESCRIPTION>
+      <ADDRESS_LIST>
+        <ADDRESS>
+          <PROTOCOL>TCP</PROTOCOL>
+          <HOST>prod01-vip</HOST>
+          <PORT>1521</PORT>
+        </ADDRESS>
+        <ADDRESS>
+          <PROTOCOL>TCP</PROTOCOL>
+          <HOST>prod02-vip</HOST>
+          <PORT>1521</PORT>
+        </ADDRESS>
+      </ADDRESS_LIST>
+      <CONNECT_DATA>
+        <SERVICE_NAMES>
+          <SERVICE_NAME ID="1">orcl</SERVICE_NAME>
+        </SERVICE_NAMES>
+        <INSTANCES>
+          <INSTANCE ID="1">ORCL1</INSTANCE>
+          <INSTANCE ID="2">ORCL2</INSTANCE>
+        </INSTANCES>
+      </CONNECT_DATA>
+    </DESCRIPTION>
+  </TNS>
+</TNSNAMES>
